@@ -1,0 +1,6 @@
+# brightness keys
+XF86MonBrightnessUp
+	changebrightness up
+
+XF86MonBrightnessDown
+	changebrightness down

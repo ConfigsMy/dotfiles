@@ -5,12 +5,19 @@
 !.config
 .config/*
 !.config/alacritty
+!.config/alacritty/**
 !.config/awesome
+!.config/awesome/**
 !.config/lf
+!.config/lf/**
 !.config/picom
+!.config/picom/**
 !.config/polybar
+!.config/polybar/**
 !.config/rofi
+!.config/rofi/**
 !.config/sxhkd
+!.config/sxhkd/**
 
 !.local
 .local/*
