@@ -10,3 +10,4 @@ run() {
 run numlockx
 run sxhkd -c /home/artur/.config/sxhkd/sxhkdrc
 
+

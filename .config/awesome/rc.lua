@@ -61,16 +61,21 @@ myawesomemenu = {
    { "Quit", function() awesome.quit() end },
 }
 
-mybrowsers = {
-  { "Firefox", "firefox" },
-  { "Google Chrome", "chrome" }
+myBrowsers = {
+  { " Firefox", "firefox" },
+  { " Google Chrome", "chrome" }
+}
+
+myFileManagers = { 
+  { "LF", terminal .. " -e lf" } 
 }
 
 mymainmenu = awful.menu({ 
   items = { 
     { "Awesome", myawesomemenu, beautiful.awesome_icon },
-    { "Terminal", terminal },
-    { "Browsers", mybrowsers }
+    { "Terminal", terminal, "" },
+    { "󰖟 Browsers", myBrowsers },
+    { " Files", myFileManagers }
   }
 })
 

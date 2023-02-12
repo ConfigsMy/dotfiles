@@ -4,3 +4,7 @@ XF86MonBrightnessUp
 
 XF86MonBrightnessDown
 	changebrightness down
+
+# screenshot
+alt + s
+  flameshot gui

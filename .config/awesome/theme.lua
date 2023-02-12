@@ -19,8 +19,8 @@ local theme = {}
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = themes_path.."default/submenu.png"
-theme.menu_height    = dpi(25)
-theme.menu_width     = dpi(150)
+theme.menu_height    = dpi(35)
+theme.menu_width     = dpi(200)
 theme.menu_bg_normal = "#374247" 
 theme.menu_bg_focus = "#f7f4e0"
 theme.menu_fg_focus  = "#374247"
@@ -42,7 +42,7 @@ theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 -- BORDERS
-theme.useless_gap         = dpi(5)
+theme.useless_gap         = dpi(10)
 theme.border_width        = dpi(1)
 theme.border_color_normal = "#000000"
 theme.border_color_active = "#535d6c"
