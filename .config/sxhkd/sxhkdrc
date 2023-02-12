@@ -1,17 +1,17 @@
 # brightness keys
 XF86MonBrightnessUp
-	changebrightness up
+	change-brightness up
 
 XF86MonBrightnessDown
-	changebrightness down
+	change-brightness down
 
 
 # volume keys
 XF86AudioRaiseVolume
-	changevolume up
+	change-volume up
 
 XF86AudioLowerVolume
-	changevolume down
+	change-volume down
 
 
 # screenshot
