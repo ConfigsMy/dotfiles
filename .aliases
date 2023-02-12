@@ -3,4 +3,6 @@ alias ll="exa -alh"
 alias tree="exa --tree"
 alias cat="bat"
 alias pman="doas pacman"
+alias reboot="doas reboot"
+alias shutown="doas shutdown"
 
