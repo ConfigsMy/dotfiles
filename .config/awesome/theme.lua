@@ -26,8 +26,8 @@ theme.menu_bg_focus = "#f7f4e0"
 theme.menu_fg_focus  = "#374247"
 
 -- FONTS
-theme.font          = "sans 12"
-theme.menu_font     = "sans 14"
+theme.font          = "Hack Nerd Font Mono 12"
+theme.menu_font     = "Hack Nerd Font Mono 14"
 
 -- COLORS
 theme.bg_normal     = "#222222"

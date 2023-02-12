@@ -107,52 +107,20 @@ window:
   #multiplier: 3
 
 # Font configuration
-#font:
-  # Normal (roman) font face
-  #normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Regular
-
-  # Bold font face
-  #bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Bold
-
-  # Italic font face
-  #italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Italic
-
-  # Bold italic font face
-  #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+font:
+  normal:
+    family: Hack Nerd Font Mono
+    style:  Regular
+  bold:
+    family: Hack Nerd Font Mono
+    style:  Bold
+  italic:
+    family: Hack Nerd Font Mono
+    style:  Italic
+  bold_italic:
+    family: Hack Nerd Font Mono
+    style: Bold Italic
+  size: 12
 
   # Point size
   #size: 11.0
@@ -179,7 +147,7 @@ window:
   #builtin_box_drawing: true
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
 #colors:

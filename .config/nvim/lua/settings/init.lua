@@ -21,9 +21,6 @@ opt.cursorline = true
 opt.termguicolors = true
 opt.background = 'dark'
 
--- clipboard
-opt.clipboard:append("unnamedplus")
-
 -- split windows
 opt.splitbelow = true
 opt.splitright = true
