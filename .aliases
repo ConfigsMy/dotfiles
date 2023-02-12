@@ -2,5 +2,5 @@ alias ls="exa"
 alias ll="exa -alh"
 alias tree="exa --tree"
 alias cat="bat"
-
+alias pman="doas pacman"
 

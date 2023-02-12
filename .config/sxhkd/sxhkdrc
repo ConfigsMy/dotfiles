@@ -5,6 +5,15 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	changebrightness down
 
+
+# volume keys
+XF86AudioRaiseVolume
+	changevolume up
+
+XF86AudioLowerVolume
+	changevolume down
+
+
 # screenshot
 alt + s
   flameshot gui
