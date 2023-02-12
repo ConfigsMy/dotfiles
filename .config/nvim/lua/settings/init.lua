@@ -7,7 +7,7 @@ opt.expandtab = true
 opt.autoindent = true
 
 -- line wrapping
-opt.wrap = false
+opt.wrap = true
 
 -- search settings
 opt.incsearch = true

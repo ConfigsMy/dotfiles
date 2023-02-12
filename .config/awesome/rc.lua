@@ -578,3 +578,6 @@ end)
 -- scale screen
 awful.screen.set_auto_dpi_enabled( true )
 
+-- start some scripts/programms
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+
