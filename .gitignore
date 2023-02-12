@@ -16,6 +16,8 @@
 !.config/polybar/**
 !.config/rofi
 !.config/rofi/**
+!.config/starship
+!.cinfig/startship/**
 !.config/sxhkd
 !.config/sxhkd/**
 

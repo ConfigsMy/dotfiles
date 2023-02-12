@@ -54,11 +54,11 @@ modkey = "Mod4"
 -- {{{ Menu
 -- Create a launcher widget and a main menu
 myawesomemenu = {
-   { "Hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
-   { "Manual", terminal .. " -e man awesome" },
-   { "Edit config", editor_cmd .. " " .. awesome.conffile },
-   { "Restart", awesome.restart },
-   { "Quit", function() awesome.quit() end },
+   { " Hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
+   { " Manual", terminal .. " -e man awesome" },
+   { " Edit config", editor_cmd .. " " .. awesome.conffile },
+   { " Restart", awesome.restart },
+   { " Quit", function() awesome.quit() end },
 }
 
 myBrowsers = {

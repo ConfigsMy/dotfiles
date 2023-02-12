@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 run() {
   if ! pgrep -f "$1" ;
@@ -8,6 +8,8 @@ run() {
 }
 
 run numlockx
-run sxhkd -c /home/artur/.config/sxhkd/sxhkdrc
-
-
+run sxhkd -c $HOME/.config/sxhkd/sxhkdrc
+run polybar
+run picom
+run nextcloud --background
+ 
