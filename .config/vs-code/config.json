@@ -1,0 +1,90 @@
+ {
+  // ######################################### //
+  //                 EDITOR                    //
+  // ######################################### //
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // "editor.glyphMargin": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+
+  // ######################################### //
+  //                 WORKBENCH                 //
+  // ######################################### //
+  "workbench.startupEditor": "none",
+  "workbench.editor.closeEmptyGroups": true,
+  "window.zoomLevel": 2,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "onFocusChange",
+
+  // ######################################### //
+  //                JAVASCRIPT                 //
+  // ######################################### //
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // ######################################### //
+  //                TYPESCRIPT                 //
+  // ######################################### //
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Theme
+  "workbench.colorTheme": "Space Ocean Kit Refined",
+  "workbench.iconTheme": "bearded-icons",
+
+  // ######################################### //
+  //                PLUGINS                    //
+  // ######################################### //
+
+  // Auto Close Tag
+  "auto-close-tag.disableOnLanguage": ["typescript"],
+
+  // Code Runner
+  "code-runner.runInTerminal": true,
+
+  // Eslint
+  "editor.mouseWheelZoom": true,
+  "eslint.debug": true,
+  "eslint.format.enable": false,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "typescript", "html"],
+
+  // Path Intellisence
+  "javascript.suggest.paths": true,
+  "typescript.suggest.paths": true,
+
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "gitlens.rebase"
+  },
+
+  // SortJSON
+  "sortJSON.contextMenu": {
+    "sortJSON": true,
+    "sortJSONAlphaNum": false,
+    "sortJSONAlphaNumReverse": false,
+    "sortJSONKeyLength": false,
+    "sortJSONKeyLengthReverse": false,
+    "sortJSONReverse": false,
+    "sortJSONType": false,
+    "sortJSONTypeReverse": false,
+    "sortJSONValues": false,
+    "sortJSONValuesReverse": false
+  },
+
+  // CSpell
+  "cSpell.dictionaries": ["vscode-dictionary"],
+  "cSpell.dictionaryDefinitions": [
+    {
+      "addWords": true,
+      "name": "vscode-dictionary",
+      "path": "~/.cspell/vscode-dictionary.txt"
+    }
+  ]
+}
+

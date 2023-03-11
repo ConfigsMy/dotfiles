@@ -20,6 +20,8 @@
 !.cinfig/startship/**
 !.config/sxhkd
 !.config/sxhkd/**
+!.config/vs-code
+!.config/vs-code/**
 
 !.local
 .local/*
