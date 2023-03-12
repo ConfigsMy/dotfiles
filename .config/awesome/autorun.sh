@@ -7,4 +7,5 @@ run() {
   fi
 }
 
- 
+run firefox
+run chrome

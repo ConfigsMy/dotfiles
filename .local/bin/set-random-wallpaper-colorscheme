@@ -3,7 +3,7 @@
 wallpaperFile=$(find $HOME/Nextcloud/Разное/Обои -type f | shuf -n1)
 wal -ni "${wallpaperFile}"
 
-wallpaperConfig="${HOME}/.config/awesome/rc.lua"
+wallpaperConfig="${HOME}/.config/awesome/init_theme.lua"
 sed -nir "s|^beautiful.wallpaper = \".*\"|beautiful.wallpaper = \"${wallpaperFile}\"| p" "${wallpaperConfig}"
 
 cp $HOME/.cache/wal/colors.Xresources $HOME/.Xresources

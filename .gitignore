@@ -4,22 +4,35 @@
 
 !.config
 .config/*
+# ------------------------------
 !.config/alacritty
 !.config/alacritty/**
+# ------------------------------
 !.config/awesome
 !.config/awesome/**
+.config/awesome/xxx-awesome-*/
+.config/awesome/themes/**
+!.config/awesome/themes/default
+!.config/awesome/themes/xresources
+# ------------------------------
 !.config/lf
 !.config/lf/**
+# ------------------------------
 !.config/picom
 !.config/picom/**
+# ------------------------------
 !.config/polybar
 !.config/polybar/**
+# ------------------------------
 !.config/rofi
 !.config/rofi/**
+# ------------------------------
 !.config/starship
 !.cinfig/startship/**
+# ------------------------------
 !.config/sxhkd
 !.config/sxhkd/**
+# ------------------------------
 !.config/vs-code
 !.config/vs-code/**
 

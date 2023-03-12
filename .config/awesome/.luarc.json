@@ -1,0 +1,15 @@
+{
+  "workspace.ignoreDir": [
+    "rc.back.lua",
+    "xxx-*/",
+    "themes/*/",
+    "!themes/default/",
+    "!themes/xresources/"
+  ],
+  "diagnostics": {
+    "globals": ["awesome", "client", "mouse", "screen", "tag"],
+    "neededFileStatus": {
+      "codestyle-check": "Any"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*.lua]
+indent_style = space
+indent_size = 4
+# [line space]
+line_space_after_if_statement = max(3)
+line_space_after_do_statement = max(3)
+line_space_after_while_statement = max(3)
+line_space_after_repeat_statement = max(3)
+line_space_after_for_statement = max(3)
+line_space_after_local_or_assign_statement = max(3)
+line_space_after_function_statement = fixed(2)
+line_space_after_expression_statement = max(3)
+line_space_after_comment = max(3)
