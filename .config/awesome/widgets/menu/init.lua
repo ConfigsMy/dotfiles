@@ -6,7 +6,7 @@ local mod = require("bindings.mod")
 local vars = require("config.vars")
 local _M = {}
 
-local awesomeMenu = {
+local awesome_menu = {
     {
         " Hotkeys",
         function()
@@ -29,11 +29,11 @@ local browsers = {
     { " Google Chrome", "chrome" },
 }
 
-local fileManagers = {
+local file_managers = {
     { "LF", vars.terminal .. " -e lf" },
 }
 
-local function createMenuBindings(m)
+local function create_menu_bindings(m)
     awful.keyboard.append_global_keybindings({
         awful.key({
             modifiers = { mod.super },
@@ -56,10 +56,10 @@ end
 function _M.create()
     _M.menu = awful.menu({
         items = {
-            { "Awesome",       awesomeMenu,  beautiful.awesome_icon },
+            { "Awesome",       awesome_menu, beautiful.awesome_icon },
             { " Terminal",  vars.terminal },
             { "󰖟 Browsers", browsers },
-            { " Files",     fileManagers },
+            { " Files",     file_managers },
         },
     })
     _M.widget = awful.widget.launcher({
@@ -67,7 +67,7 @@ function _M.create()
         menu = _M.menu,
     })
 
-    createMenuBindings(_M.menu)
+    create_menu_bindings(_M.menu)
 
     return _M.widget
 end

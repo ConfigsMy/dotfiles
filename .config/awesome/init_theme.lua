@@ -1,14 +1,6 @@
 local beautiful = require("beautiful")
-local awful = require("awful")
+local themes = require("themes")
 
-awful.screen.set_auto_dpi_enabled(true)
-
-local themes = {
-    "default",
-    "xresources",
-}
-local chosen_theme = themes[2]
-
-
-beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
-beautiful.wallpaper = "/home/artur/Nextcloud/Разное/Обои/8.jpg"
+local theme = themes.xresources.theme
+beautiful.init(theme)
+beautiful.wallpaper = "/home/artur/Nextcloud/Разное/Обои/22.jpg"

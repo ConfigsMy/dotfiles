@@ -1,4 +1,5 @@
 return {
+    battery = require("widgets.battery"),
     menu = require("widgets.menu"),
     layoutbox = require("widgets.layoutbox"),
     logout_menu = require("widgets.logout_menu"),

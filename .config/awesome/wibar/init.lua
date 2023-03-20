@@ -1,7 +1,7 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local widgets = require("widgets")
-local _M = {}
+local _M = { widgets = {} }
 
 
 -- local battery_widget = require("awesome-widgets.batteryarc-widget")
@@ -9,34 +9,34 @@ local _M = {}
 
 -- Create the wibox
 function _M.create(s)
+    _M.widgets.layoutbox = widgets.layoutbox.create(s)
+    _M.widgets.textclock = wibox.widget.textclock()
+    _M.left = wibox.widget({
+        -- Left widgets
+        layout = wibox.layout.fixed.horizontal,
+        widgets.menu.create(),
+        _M.widgets.layoutbox,
+        widgets.taglist.create(s),
+        awful.widget.prompt()
+    })
+    _M.right = wibox.widget({
+        -- Right widgets
+        layout = wibox.layout.fixed.horizontal,
+        awful.widget.keyboardlayout(),
+        widgets.battery({ show_current_level = true }),
+        _M.widgets.textclock,
+        wibox.widget.systray(),
+        widgets.logout_menu(),
+    })
+
     _M.widget = awful.wibar({
         position = "top",
         screen = s,
         widget = {
             layout = wibox.layout.align.horizontal,
-            {
-                -- Left widgets
-                layout = wibox.layout.fixed.horizontal,
-                widgets.menu.create(),
-                widgets.taglist.create(s),
-                awful.widget.prompt()
-            },
+            _M.left,
             widgets.tasklist.create(s), -- Middle widget
-            {
-                -- Right widgets
-                layout = wibox.layout.fixed.horizontal,
-                awful.widget.keyboardlayout(),
-                -- volume_widget({
-                -- 	widget_type = "arc",
-                -- }),
-                -- battery_widget({
-                -- 	show_current_level = true,
-                -- 	arc_thickness = 1,
-                -- }),
-                wibox.widget.textclock(),
-                wibox.widget.systray(),
-                widgets.logout_menu(),
-            },
+            _M.right
         },
     })
 

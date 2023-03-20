@@ -2,7 +2,8 @@
 
 
 -- load luarocks if installed
-pcall(require, "luarocks.loader")
+-- pcall(require, "luarocks.loader")
+require("luarocks.loader")
 
 -- Standard awesome library
 local awful = require("awful")
@@ -12,6 +13,7 @@ local menubar = require("menubar")
 
 
 -- -- Menubar configuration
+awful.screen.set_auto_dpi_enabled(true)
 menubar.utils.terminal = vars.terminal -- Set the terminal for applications that require it
 
 
