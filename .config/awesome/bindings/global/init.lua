@@ -1,2 +1,0 @@
-require("bindings.global.keys")
-require("bindings.global.mouse")

@@ -1,0 +1,8 @@
+[user]
+	email = isaev.artur.1999@mail.ru
+	name = Artur Isaev
+[init]
+	defaultBranch = main
+[alias]
+	st = status
+	diffs = diff --staged

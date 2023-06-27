@@ -1,5 +1,3 @@
-require("bindings.global")
-
 return {
     client = {
         key = require("bindings.client.keys"),

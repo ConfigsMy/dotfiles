@@ -1,6 +1,9 @@
 *
 
+!.bashrc
+
 !.gitignore
+!.gitconfig
 
 !.config
 .config/*
@@ -15,8 +18,18 @@
 !.config/awesome/themes/default
 !.config/awesome/themes/xresources
 # ------------------------------
+!.config/fish
+!.config/fish/**
+# ------------------------------
+!.config/fontconfig/
+!.config/fontconfig/conf.d
+!.config/fontconfig/conf.d/00-Aliases.conf
+# ------------------------------
 !.config/lf
 !.config/lf/**
+# ------------------------------
+!.config/nvim
+!.config/nvim/**
 # ------------------------------
 !.config/picom
 !.config/picom/**
@@ -44,4 +57,5 @@
 !.aliases
 
 .git
+*.luar
 

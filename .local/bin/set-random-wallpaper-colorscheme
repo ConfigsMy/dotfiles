@@ -1,11 +1,12 @@
 #!/bin/bash
 
 wallpaperFile=$(find $HOME/Nextcloud/Разное/Обои -type f | shuf -n1)
-wal -ni "${wallpaperFile}"
+wal -i "${wallpaperFile}"
 
 wallpaperConfig="${HOME}/.config/awesome/init_theme.lua"
-sed -nir "s|^beautiful.wallpaper = \".*\"|beautiful.wallpaper = \"${wallpaperFile}\"| p" "${wallpaperConfig}"
+sed -ir "s|^beautiful.wallpaper = \".*\"|beautiful.wallpaper = \"${wallpaperFile}\"|" "${wallpaperConfig}"
 
 cp $HOME/.cache/wal/colors.Xresources $HOME/.Xresources
 
+awesome-client "screen.emit_signal 'theme::change'"
 
